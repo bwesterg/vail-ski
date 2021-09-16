@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import TrailContainer from './components/TrailContainer';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  state = {
+    trails: [
+      {name: "The Pump Hole", difficulty:"2Black"},
+      {name: "Riva Ridge", difficulty:"1Black"},
+      {name: "Avanti", difficulty:"Blue"},
+      {name: "Highline", difficulty:"2Black"}
+    ]
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <TrailContainer trails={this.state.trails} />
+      </div>
+    );
+  }
 }
 
 export default App;
