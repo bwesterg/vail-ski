@@ -6,7 +6,7 @@ import './App.css';
 class App extends Component {
 
   state = {
-    trails: []
+    trails: [],
   }
 
   componentDidMount(){
@@ -15,10 +15,16 @@ class App extends Component {
       .then(trails => this.setState({trails}))
   }
 
+  addTrail = (newTrail) => {
+    this.setState({
+      trails: [...this.state.trails, newTrail]
+    })
+  }
+
   render(){
     return (
       <div className="App">
-        <TrailForm />
+        <TrailForm addTrail={this.addTrail} />
         <TrailContainer trails={this.state.trails} />
       </div>
     );
