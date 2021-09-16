@@ -5,12 +5,7 @@ import './App.css';
 class App extends Component {
 
   state = {
-    trails: [
-      {name: "The Pump Hole", difficulty:"2Black"},
-      {name: "Riva Ridge", difficulty:"1Black"},
-      {name: "Avanti", difficulty:"Blue"},
-      {name: "Highline", difficulty:"2Black"}
-    ]
+    trails: []
   }
 
   render(){
