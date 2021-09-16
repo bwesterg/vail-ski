@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 export default class TrailForm extends Component {
     
     state = {
@@ -14,9 +13,14 @@ export default class TrailForm extends Component {
         })
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.props.addTrail(this.state)
+    }
+
     render() {
         return (
-            <form className="trail-form">
+            <form onSubmit={this.handleSubmit} className="trail-form">
                 <h2>New Trail Form</h2>
                 <label>Name</label>
                 <input 
