@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+const initialState = {
+    name: "",
+    difficulty: ""
+}
+
 export default class TrailForm extends Component {
     
-    state = {
-        name: "",
-        difficulty: ""
-    }
+    state = initialState
 
     handleChange = (event) => {
         this.setState({
@@ -16,6 +18,7 @@ export default class TrailForm extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addTrail(this.state)
+        this.setState(initialState)
     }
 
     render() {
