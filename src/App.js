@@ -3,7 +3,7 @@ import TrailContainer from './components/TrailContainer';
 import TrailForm from './components/TrailForm';
 import './App.css';
 
-const trailsURL = "http://localhost:3000/trails"
+const trailsURL = "http://localhost:3000/trails/"
 
 class App extends Component {
 
@@ -19,6 +19,18 @@ class App extends Component {
         trails,
         currentId: trails[trails.length - 1].id
       }))
+  }
+
+  removeTrail = (trailToRemove) => {
+    let filteredTrails = this.state.trails.filter(trail => {
+      return trail !== trailToRemove
+    })
+    this.setState({
+      trails: filteredTrails
+    })
+    fetch(trailsURL + trailToRemove.id, {
+      method: "DELETE",
+    })
   }
 
   addTrail = (newTrail) => {
@@ -42,7 +54,7 @@ class App extends Component {
     return (
       <div className="App">
         <TrailForm addTrail={this.addTrail} />
-        <TrailContainer trails={this.state.trails} />
+        <TrailContainer removeTrail={this.removeTrail} trails={this.state.trails} />
       </div>
     );
   }
