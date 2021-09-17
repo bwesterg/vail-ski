@@ -18,10 +18,16 @@ body{
 }
 
 .trail-card {
-  width: 250px;
+  width: 200px;
   height: 100px;
   box-shadow: rgba(0, 0, 0, 0.26) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 6px;
   padding: 10px;
   background-color: white;
+}
+
+.delete {
+  background-color: rgb(245, 130, 130);
+  font-weight: 700;
+  color: white;
 }

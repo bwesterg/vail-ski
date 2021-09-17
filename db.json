@@ -1,29 +1,24 @@
 {
-    "trails": [
-        {
-            "id": 1,
-            "name": "The Pump Hole",
-            "difficulty": "2Black"
-        },
-        {
-            "id": 2,
-            "name": "Riva Ridge",
-            "difficulty": "1Black"
-        },
-        {
-            "id": 3,
-            "name": "Avanti",
-            "difficulty": "Blue"
-        },
-        {
-            "id": 4,
-            "name": "Highline",
-            "difficulty": "2Black"
-        },
-        {
-            "id": 5,
-            "name": "Tourist Trap",
-            "difficulty": "1Black"
-        }
-    ]
+  "trails": [
+    {
+      "id": 1,
+      "name": "The Pump Hole",
+      "difficulty": "2Black"
+    },
+    {
+      "id": 2,
+      "name": "Riva Ridge",
+      "difficulty": "1Black"
+    },
+    {
+      "id": 3,
+      "name": "Avanti",
+      "difficulty": "Blue"
+    },
+    {
+      "id": 4,
+      "name": "Highline",
+      "difficulty": "2Black"
+    }
+  ]
 }
