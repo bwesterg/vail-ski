@@ -40,7 +40,6 @@ export default class TrailForm extends Component {
                     onChange={this.handleChange}
                 />
                 <input type="submit" value="Add a Trail" />
-
             </form>
         )
     }
