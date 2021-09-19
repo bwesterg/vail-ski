@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import TrailContainer from './components/TrailContainer';
 import TrailForm from './components/TrailForm';
 import './App.css';
