@@ -9,7 +9,7 @@ export default function TrailContainer(props) {
 
     return (
         <div>
-            <form>
+            {/* <form>
                 <label for="difficulty">Choose a difficulty:</label>
                     <select name="difficulty" id="status">
                         <option value="green">GREEN</option>
@@ -17,7 +17,7 @@ export default function TrailContainer(props) {
                         <option value="1black">1BLACK</option>
                         <option value="2black">2BLACK</option>
                     </select>
-            </form>
+            </form> */}
             <ul className="trail-container">
                 {showTrails()}
             </ul>
