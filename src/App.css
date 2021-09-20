@@ -1,9 +1,23 @@
+body {
+  background-color: rgb(36, 175, 231);
+
+}
+
 .App {
   text-align: center;
 }
 
-body {
-  background-color: rgb(36, 175, 231);
+.trail-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(233, 255, 251);
+  box-shadow: rgba(0, 0, 0, 0.27) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 6px;
+  width: 300px;
+  height: max-content;
+  padding: 10px;
+  margin: auto;
 }
 
 .trail-container {
@@ -22,7 +36,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.27) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 6px;
   padding: 10px;
-  background-color: white;
+  background-color: rgb(233, 255, 251);
   margin-bottom: 5rem;
 }
 
@@ -32,6 +46,3 @@ body {
   color: white;
 }
 
-.trail-form {
-  background-color: white;
-}

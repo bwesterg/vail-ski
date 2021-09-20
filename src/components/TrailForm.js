@@ -25,22 +25,22 @@ export default class TrailForm extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit} className="trail-form">
-                <h2>New Trail Form</h2>
-                <label>Name</label>
+                <h2>Add a Trail</h2>
+                <label>Trail Name:</label>
                 <input 
                     type="text" 
                     name="name"
                     value={this.state.name}
                     onChange={this.handleChange}
                 />
-                <label>Choose a difficulty:</label>
+                <label>Difficulty Rating:</label>
                 <select name="difficulty" value={this.state.difficulty} onChange={this.handleChange} > 
                     <option value="green">GREEN</option>
                     <option value="blue">BLUE</option>
                     <option value="1black">1BLACK</option>
                     <option value="2black">2BLACK</option>
                 </select>
-                <input type="submit" value="Add a Trail" /> 
+                <input type="submit" value="SUBMIT" /> 
             </form>
         )
     }
