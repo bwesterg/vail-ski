@@ -10,6 +10,7 @@ export default class TrailForm extends Component {
     state = initialState
 
     handleChange = (event) => {
+        // console.log(event.target.value)
         this.setState({
             [event.target.name]: event.target.value
         })
@@ -32,15 +33,16 @@ export default class TrailForm extends Component {
                     value={this.state.name}
                     onChange={this.handleChange}
                 />
-                <label>Difficulty</label>
-                <input 
-                    type="text" 
-                    name="difficulty"
-                    value={this.state.difficulty} 
-                    onChange={this.handleChange}
-                />
-                <input type="submit" value="Add a Trail" />
+                <label>Choose a difficulty:</label>
+                <select name="difficulty" value={this.state.difficulty} onChange={this.handleChange} > 
+                    <option value="green">GREEN</option>
+                    <option value="blue">BLUE</option>
+                    <option value="1black">1BLACK</option>
+                    <option value="2black">2BLACK</option>
+                </select>
+                <input type="submit" value="Add a Trail" /> 
             </form>
         )
     }
 }
+

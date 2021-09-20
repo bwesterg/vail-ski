@@ -19,6 +19,11 @@
       "id": 4,
       "name": "Highline",
       "difficulty": "2Black"
+    },
+    {
+      "id": 5,
+      "name": "Test",
+      "difficulty": "blue"
     }
   ]
 }
