@@ -17,9 +17,9 @@ body {
 }
 
 .trail-card {
-  width: 200px;
-  height: 100px;
-  box-shadow: rgba(0, 0, 0, 0.26) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 220px;
+  height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.27) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 6px;
   padding: 10px;
   background-color: white;
@@ -27,7 +27,7 @@ body {
 }
 
 .delete {
-  background-color: rgb(245, 130, 130);
+  background-color: rgb(249, 130, 133);
   font-weight: 700;
   color: white;
 }
